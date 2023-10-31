@@ -100,10 +100,6 @@ nav{
     background-color: rgba(162, 162, 162, 0.205);
 }
 
-main{
-    height: 10000px;
-}
-
 /* -----section_1----- */
 
 .section_1{
@@ -228,4 +224,65 @@ main{
     line-height: 3.5rem;
     white-space: pre-line;
     text-align: center;
+}
+
+/* -----section_3----- */
+
+.section_3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section_3_detail{
+    position: relative;
+    padding: 15rem 0;
+    width: 94%;
+    margin: auto;
+}
+
+.section_3_word1 h1{
+    color: rgb(0, 110, 255);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section_3_word1 h2{
+    font-size: 3rem;
+    white-space: pre-line;
+}
+
+.section_3_image1{
+
+}
+
+.section_3_image1-1{
+  
+}
+
+.section_3_image1-2{
+
+}
+
+.section_3_image2{
+
+}
+
+.section_3_image2-1{
+   
+}
+
+.section_3_image2-2{
+   
+}
+
+.section_3_word2{
+    position: relative;
+    white-space: pre-line;
+}
+
+.section_3_word2 p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(51, 61, 75);
 }
