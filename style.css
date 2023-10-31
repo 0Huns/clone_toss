@@ -234,11 +234,16 @@ nav{
     height: 100%;
 }
 
-.section_3_detail{
+.section_container{
     position: relative;
     padding: 15rem 0;
-    width: 94%;
+}
+
+.section_detail{
+    position: relative;
     margin: auto;
+    width: 92%;
+    height: 120vh;
 }
 
 .section_3_word1 h1{
@@ -252,16 +257,25 @@ nav{
     white-space: pre-line;
 }
 
-.section_3_image1{
+.section_3_image{
+    
+}
 
+.section_3_image1{
+    position: absolute;
+    width: 50%;
 }
 
 .section_3_image1-1{
-  
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    width: 17rem;
 }
 
 .section_3_image1-2{
-
+    position: relative;
+    width: 29rem;
 }
 
 .section_3_image2{
@@ -269,19 +283,21 @@ nav{
 }
 
 .section_3_image2-1{
-   
+
 }
 
 .section_3_image2-2{
-   
+
 }
 
 .section_3_word2{
-    position: relative;
     white-space: pre-line;
 }
 
 .section_3_word2 p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(51, 61, 75);
