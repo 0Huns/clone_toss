@@ -492,7 +492,7 @@ nav{
     justify-content: space-between;
     position: absolute;
     top: 17rem;
-    max-width: 100%;
+    max-width: 80rem;
 }
 
 .section_7_word1 p, .section_7_word2 p{
@@ -503,6 +503,10 @@ nav{
     color: rgb(69, 82, 101);
     line-height: 1.5;
     z-index: 1;
+}
+
+.section_7_word1 p{
+    max-width: 17rem;
 }
 
 .section_7_word2 p{
