@@ -253,7 +253,7 @@ nav{
 .section_3_detail{
     position: relative;
     margin: auto;
-    height: 145vh;
+    height: 1272px;
 }
 
 .section_title_word{
@@ -321,7 +321,7 @@ nav{
 
 .section_3_word2 p{
     position: absolute;
-    bottom: 0;
+    bottom: 14rem;
     right: 0;
     font-size: 1.5rem;
     font-weight: 600;
@@ -478,3 +478,6 @@ nav{
     white-space: pre-line;
     padding-top: 1.5rem;
 }
+
+/* -----section_6----- */
+
