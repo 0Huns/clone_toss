@@ -267,9 +267,9 @@ nav{
 }
 
 .section_title_word h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
     white-space: pre-line;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 .section_3_image1{
@@ -383,3 +383,64 @@ nav{
     border-radius: 10%;
     box-shadow: -9px 10px 20px 0px #bcbcbc;
 }
+
+/* -----section_5----- */
+
+.section_5_detail{
+    position: relative;
+    margin: auto;
+}
+
+.section_5_word1-1, .section_5_word1-2, .section_5_word1-3{
+    position: relative;
+    font-size: 3.5rem;
+    color: rgb(51, 61, 75);
+    font-weight: 600;
+    z-index: 1;
+    line-height: 1.5;
+}
+
+.section_5_word1-2{
+    color: #8b95a1;
+}
+
+.section_5_word1-3{
+    color: #d1d6db;
+}
+
+.section_5_word2{
+    white-space: pre-line;
+    margin-top: 2rem;
+}
+
+.section_5_word2 p{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(51, 61, 75);
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.section_5_image1{
+    position: absolute;
+    width: 42rem;
+    height: auto;
+    top: 0;
+    right: -10%;
+}
+
+.section_5_image1-1{
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    width: 58%;
+}
+
+.section_5_image1-2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* -----section_6----- */
