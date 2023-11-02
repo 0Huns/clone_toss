@@ -249,7 +249,7 @@ nav{
     width: 92%;
 }
 
-.section_detail{
+.section_3_detail{
     position: relative;
     margin: auto;
     height: 145vh;
@@ -269,6 +269,7 @@ nav{
 .section_title_word h2{
     font-size: 3rem;
     white-space: pre-line;
+    margin-bottom: 10rem;
 }
 
 .section_3_image1{
@@ -328,9 +329,29 @@ nav{
 
 /* -----section_4----- */
 
+.section_4_detail{
+    position: relative;
+    margin: auto;
+}
+
 .section_4_box{
     display: flex;
-    margin-top: 9rem;
+    margin-bottom: 13rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section_4_box_revers{
+    display: flex;
+    margin-bottom: 13rem;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.section_4_box img, .section_4_box_revers img{
+    width: 45%;
 }
 
 .section_4_word{
@@ -353,4 +374,12 @@ nav{
     color: rgb(107, 118, 132);
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.section_4_card{
+    width: 35%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10%;
+    box-shadow: -9px 10px 20px 0px #bcbcbc;
 }
