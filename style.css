@@ -513,7 +513,7 @@ nav{
     text-align: center;
 }
 
-.section_7_image1{
+.section_7_image{
     position: relative;
     width: 42rem;
     height: auto;
@@ -535,20 +535,129 @@ nav{
     z-index: 1;
 }
 
-.section_7_image2{
+.section_7_image1-3_box{
     position: absolute;
-    top: 37.5rem;
-    left: -12rem;
+    top: 44.5rem;
+    left: -28rem;
 }
 
-.section_7_image2_box{
+.section_7_image1-3{
     display: flex;
     justify-content: space-around;
 }
 
-.section_7_image2_box img{
+.section_7_image1-3 img{
     width: 13rem;
     margin: 0 0.5rem;
 }
 
 /* -----section_8----- */
+
+.section_8_image{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.section8_bgi{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_8_detail{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_8_word{
+    margin-bottom: 5rem;
+}
+
+.section_8_word h1{
+    font-size: 4.5rem;
+    white-space: pre-line;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+/* -----section_9----- */
+
+.section_9_detail{
+    position: relative;
+    margin: auto;
+}
+
+.section_9_part{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+    flex: 1;
+}
+
+#section_9_part_shrink{
+    flex: 2;
+    margin-right: 2rem;
+}
+
+.section_9_part img{
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    object-fit: contain;
+    max-width: 763px;
+    width: 100%;
+}
+
+.section_9_part1_word{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.section_9_part h2, .section_9_part span{
+    font-size: 2.5rem;
+    color: #191f28;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.section_9_part h2{
+    margin-right: 1rem;
+}
+
+.section_9_part span{
+    color: #b0b8c1;
+    white-space: pre-line;
+}
+
+.section_9_part p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: pre-line;
+    line-height: 1.5;
+    color: #333d4b;;
+}
+
+.section_9_part_container{
+    display: flex;
+}
+
+.section_9_part2_word{
+    display: flex;
+    flex-direction: column;
+}
+
+.section_9_part4_word{
+    width: 50%;
+}
+
+/* -----section_10----- */
