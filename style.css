@@ -45,6 +45,27 @@ nav{
     display: flex;
     flex: 1;
     justify-content: end;
+    align-items: center;
+}
+
+.nav_menu_box_button{
+    display: none;
+    background-color: #3182f6;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    color: #ffffff;
+    height:fit-content;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    border: 0 solid transparent;
+}
+
+.nav_menu_box_burger{
+    display: none;
+    width: 2rem;
 }
 
 .nav_menu{

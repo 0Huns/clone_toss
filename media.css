@@ -1,0 +1,11 @@
+.nav_menu{
+    display: none;
+}
+
+.nav_menu_box_button{
+    display: flex;
+}
+
+.nav_menu_box_burger{
+    display: flex;
+}
