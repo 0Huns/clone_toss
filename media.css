@@ -2,14 +2,38 @@
     font-size: 10px;
 }
 
-.nav_menu{
-    display: none;
-}
-
-.nav_menu_box_button{
+.download_button1, .download_button2{
     display: flex;
 }
 
 .nav_menu_box_burger{
     display: flex;
+}
+
+.display_none{
+    display: none;
+}
+
+.section_3_detail {
+    height: 100%;
+}
+
+.section_3_image{
+    position: relative;
+    display: flex;
+}
+
+.section_3_image1, .section_3_image2{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.section_3_word2 p {
+    position: static;
+}
+
+.section_4_word, .section_4_box img, .section_4_box_revers img{
+    width: 100%;
 }

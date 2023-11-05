@@ -52,7 +52,7 @@ nav{
     align-items: center;
 }
 
-.nav_menu_box_button{
+.download_button1{
     display: none;
     background-color: #3182f6;
     border-radius: 20px;
@@ -60,8 +60,8 @@ nav{
     align-items: center;
     color: #ffffff;
     height:fit-content;
-    padding: 0.5rem 0.8rem;
-    font-size: 0.9rem;
+    padding: 0.9rem 0.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-right: 2rem;
     border: 0 solid transparent;
@@ -69,6 +69,7 @@ nav{
 
 .nav_menu_box_burger{
     display: none;
+    cursor: pointer;
 }
 
 .nav_menu_box_burger img{
@@ -174,13 +175,27 @@ nav{
 }
 
 .section_1_word h1{
-    font-size: 4.5rem;
+    font-size: 4.0rem;
     white-space: pre-line;
     text-align: center;
 }
 
 .section_1_storeBox{
     display: flex;
+}
+
+.download_button2{
+    display: none;
+    background-color: #3182f6;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    color: #ffffff;
+    height:fit-content;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0 solid transparent;
 }
 
 .section_1_storeBtn_1 ,.section_1_storeBtn_2{
@@ -247,8 +262,7 @@ nav{
 
 .section_2_detail{
     width: 100%;
-    height: 700px;
-    /* background-color: #f9fafb; */
+    padding: 15rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,7 +281,7 @@ nav{
 
 .section_container_padding{
     position: relative;
-    padding: 15rem 0;
+    padding: 12rem 0;
     margin: auto;
     max-width: 1140px;
 }
@@ -281,7 +295,7 @@ nav{
 .section_3_detail{
     position: relative;
     margin: auto;
-    height: 1272px;
+    height: 90rem;
 }
 
 .section_title_word{
