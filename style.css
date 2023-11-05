@@ -863,9 +863,10 @@ nav{
 
 .footer_nav2_box{
     display: inline-grid;
-    grid-template-columns: repeat(4, auto);
+    /* grid-template-columns: repeat(4, auto); */
     column-gap: 2rem;
     row-gap: 0.5rem;
+    grid-template-rows: grid-auto-row;
 }
 
 .footer_nav2 li{
