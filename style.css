@@ -14,7 +14,7 @@ html, body{
 header{
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav{
@@ -497,9 +497,8 @@ nav{
 
 .section_6_box_detail{
     width: calc(50% - 2rem);
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     margin-right: 2rem;
-    height: 400px;
 }
 
 .section_6_box_detail img{
@@ -509,13 +508,13 @@ nav{
 
 .section_6_word span{
     color: rgb(51, 61, 75);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .section_6_word p{
     color: rgb(107, 118, 132);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     white-space: pre-line;
     padding-top: 1.5rem;
@@ -535,12 +534,13 @@ nav{
     position: absolute;
     top: 17rem;
     max-width: 80rem;
+    z-index: 2;
 }
 
 .section_7_word1 p, .section_7_word2 p{
     position: relative;
     white-space: pre-line;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: rgb(69, 82, 101);
     line-height: 1.5;
@@ -548,7 +548,7 @@ nav{
 }
 
 .section_7_word1 p{
-    max-width: 17rem;
+    max-width: 18rem;
 }
 
 .section_7_word2 p{
@@ -841,7 +841,7 @@ nav{
 .footer_nav1 ul{
     color: #b0b8c1;
     font-weight: 600;
-    width: 25%;
+    width: 100%;
     flex: 1;
     line-height: 2;
 }
@@ -886,11 +886,10 @@ nav{
 
 .footer_nav2_box{
     display: inline-grid;
-    /* grid-template-columns: repeat(4, auto); */
+    grid-template-columns: repeat(4, auto);
     column-gap: 2rem;
     row-gap: 0.5rem;
-    grid-template-rows: grid-auto-row;
-}
+} 
 
 .footer_nav2 li{
     list-style: none;
@@ -903,7 +902,7 @@ nav{
 }
 
 .footer_nav3{
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .footer_nav3 ul{
