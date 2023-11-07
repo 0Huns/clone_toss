@@ -46,10 +46,15 @@
     width: 100%;
 }
 
-.section_5_image1{
+.section_5_image{
     position: relative;
     top: 0;
     right: 0;
+}
+
+.section_5_image_container{
+    display: flex;
+    justify-content: center;
 }
 
 .section_6_box_detail {
