@@ -9,6 +9,7 @@
 
 html, body{
     overflow-x :  hidden;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -168,7 +169,7 @@ nav{
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 1.5s;
 }
 
 .section_1_word{
@@ -229,6 +230,7 @@ nav{
     position: absolute;
     bottom: 3rem;
     animation: move 3s infinite;
+    cursor: pointer;
 }
 
 @keyframes move {
@@ -263,7 +265,7 @@ nav{
 
 .section_2_detail{
     width: 100%;
-    padding: 15rem 0;
+    padding: 16rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
