@@ -424,14 +424,6 @@ nav{
     line-height: 1.5;
 }
 
-.section_4_card{
-    width: 35%;
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 10%;
-    box-shadow: -9px 10px 20px 0px #bcbcbc;
-}
-
 /* -----section_5----- */
 
 .section_5_detail{
