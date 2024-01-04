@@ -38,7 +38,7 @@ let menuafter = document.querySelector('.menuafter');
 
 function showmenu(event){
     event.preventDefault();
-    menudisplay.classList.toggle('display_grid');
+    menudisplay.classList.toggle('display_visible');
 
     menubefore.classList.toggle('display_none');
     menuafter.classList.toggle('display_flex');

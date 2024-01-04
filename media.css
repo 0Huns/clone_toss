@@ -18,14 +18,16 @@
     height: auto;
 }
 
+.nav_menu_box_burger{
+    display: flex;
+}
+
 .menubefore{
     display: flex;
-    cursor: pointer;
 }
 
 .menuafter{
     display: none;
-    cursor: pointer;
 }
 
 .display_flex{
@@ -43,13 +45,13 @@
     display: grid;
     visibility: hidden;
     transform:translateY(-100%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
     width: 100%;
     background-color: white;
     z-index: -1;
 }
 
-.display_grid{
+.display_visible{
     transform:translateY(0);
     visibility: visible;
 }

@@ -68,8 +68,9 @@ nav{
     border: 0 solid transparent;
 }
 
-.menubefore .menuafter{
+.nav_menu_box_burger{
     display: none;
+    cursor: pointer;
 }
 
 .nav_menu_box_burger img{
