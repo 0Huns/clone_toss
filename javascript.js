@@ -14,3 +14,18 @@ function downtab(event){
 }
 
 down.addEventListener('click', downtab);
+
+//메뉴 바 스크롤 시 고정
+let header = document.querySelector('header');
+
+function navfix(event){
+    event.preventDefault();
+
+    if(window.scrollY > 0){
+    header.style.borderBottom = "1px solid #c1c1c1";
+    }else{
+        header.style.borderBottom = "none";
+    }
+}
+
+window.addEventListener('scroll' , navfix);
