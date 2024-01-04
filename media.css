@@ -14,12 +14,70 @@
     display: flex;
 }
 
-.nav_menu_box_burger{
+.nav_menu{
+    height: auto;
+}
+
+.menubefore{
+    display: flex;
+    cursor: pointer;
+}
+
+.menuafter{
+    display: none;
+    cursor: pointer;
+}
+
+.display_flex{
     display: flex;
 }
 
 .display_none{
     display: none;
+}
+
+.menu_display{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: grid;
+    visibility: hidden;
+    transform:translateY(-100%);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+}
+
+.display_grid{
+    transform:translateY(0);
+    visibility: visible;
+}
+
+.nav_menu_link{
+    flex-direction: column;
+}
+
+.nav_lan{
+    margin-left: 0;
+}
+
+.nav_menu_li a, .nav_lan_li{
+    font-size: 1.5rem;
+    height: 6rem;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav_menu_li a{
+    width: 100%;
+}
+
+.nav_lan_li{
+    display: flex;
+    justify-content: center;
 }
 
 .section_3_detail {

@@ -29,3 +29,19 @@ function navfix(event){
 }
 
 window.addEventListener('scroll' , navfix);
+
+//메뉴 아이콘 클릭 시 나타내기(mobile)
+let menuicon = document.querySelector('.nav_menu_box_burger');
+let menudisplay = document.querySelector('.menu_display');
+let menubefore = document.querySelector('.menubefore');
+let menuafter = document.querySelector('.menuafter');
+
+function showmenu(event){
+    event.preventDefault();
+    menudisplay.classList.toggle('display_grid');
+
+    menubefore.classList.toggle('display_none');
+    menuafter.classList.toggle('display_flex');
+}
+
+menuicon.addEventListener('click' , showmenu);
