@@ -153,6 +153,7 @@ function section7() {
     let word2 = document.querySelector('.section7_p2');
 
     let a = document.querySelector('.section_7_image1-3');
+    let b = document.querySelectorAll('.section_7_image1-3 img');
 
     if (window.innerHeight > word.getBoundingClientRect().top) {
         scrollAction(word);
@@ -165,6 +166,26 @@ function section7() {
         }, 500);
         setTimeout(function(){scrollAction(word2)},1500);
     }
+
+    //section7 img 스크롤애니메이션 opacity
+    if(a.getBoundingClientRect().top <= 610 && a.getBoundingClientRect().top >= 551) {
+        scrollOpacity(b, [0, 0, 0, 1, 0, 0, 0]);
+    }else if(a.getBoundingClientRect().top <= 550 && a.getBoundingClientRect().top >= 451) {
+        scrollOpacity(b, [0, 0, 0.5, 1, 0.5, 0, 0]);
+    } else if (a.getBoundingClientRect().top <= 450 && a.getBoundingClientRect().top >= 301) {
+        scrollOpacity(b, [0, 0.5, 1, 1, 1, 0.5, 0]);
+    } else if (a.getBoundingClientRect().top <= 300 && a.getBoundingClientRect().top >= 151) {
+        scrollOpacity(b, [0.5, 1, 1, 1, 1, 1, 0.5]);
+    } else if (a.getBoundingClientRect().top <= 150 && a.getBoundingClientRect().top >= 0) {
+        scrollOpacity(b, [1, 1, 1, 1, 1, 1, 1]);
+    }
+    console.log(a.getBoundingClientRect().top);
+}
+//section7 img 스크롤애니메이션 opacity 함수 정의
+function scrollOpacity(elements, values) {
+    elements.forEach((element, index) => {
+        element.style.opacity = values[index];
+    });
 }
 
 window.addEventListener('scroll', section7);

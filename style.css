@@ -621,6 +621,7 @@ nav{
 .section_7_image1-3 img{
     width: 13rem;
     margin: 0 0.5rem;
+    opacity: 0;
 }
 
 /* -----section_8----- */
