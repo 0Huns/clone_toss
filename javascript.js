@@ -195,6 +195,21 @@ window.addEventListener('scroll', function() {
     titleimg.style.width = Math.min(
         Math.max((95 - (titleimg.getBoundingClientRect().top / 100)), 90)
         ,100) + '%';
+})
+
+//section9 opacity 스크롤 액션
+const sectionOpacity = function (element) {
+    element.style.opacity = Math.min(
+        Math.max(1 - element.getBoundingClientRect().top / 800, 0)
+        , 1);
+}
+
+window.addEventListener('scroll', function() {
+    let sec9s = document.querySelectorAll('.section_9_part');
+
+    sec9s.forEach(sec9 => {
+        sectionOpacity(sec9);
+    });
 });
 
 //section10 스크롤 액션
