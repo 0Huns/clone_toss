@@ -179,7 +179,6 @@ function section7() {
     } else if (a.getBoundingClientRect().top <= 150 && a.getBoundingClientRect().top >= 0) {
         scrollOpacity(b, [1, 1, 1, 1, 1, 1, 1]);
     }
-    console.log(a.getBoundingClientRect().top);
 }
 //section7 img 스크롤애니메이션 opacity 함수 정의
 function scrollOpacity(elements, values) {
