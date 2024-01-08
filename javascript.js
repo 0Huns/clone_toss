@@ -122,3 +122,26 @@ function section5() {
 }
 
 window.addEventListener('scroll', section5);
+
+//section6 스크롤 액션
+function section6() {
+    let word = document.querySelectorAll('.section_title_word')[3];
+    let contents = document.querySelectorAll('.section_6_word');
+    let imgs = document.querySelectorAll('.section6_img');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(() => {
+            contents.forEach((content) => {
+                scrollAction(content);
+            });
+        }, 500);
+        setTimeout(() => {
+            imgs.forEach((img) => {
+                scrollAction(img);
+            });
+        }, 1000);
+    }
+}
+
+window.addEventListener('scroll', section6);

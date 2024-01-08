@@ -520,9 +520,16 @@ nav{
     margin-right: 2rem;
 }
 
-.section_6_box_detail img{
+.section6_img{
     width: 9rem;
     margin-bottom: 2rem;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.section_6_word{
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_6_word span{
