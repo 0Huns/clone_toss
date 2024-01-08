@@ -563,7 +563,7 @@ nav{
     z-index: 2;
 }
 
-.section_7_word1 p, .section_7_word2 p{
+.section7_p1, .section7_p2{
     position: relative;
     white-space: pre-line;
     font-size: 1.6rem;
@@ -573,12 +573,16 @@ nav{
     z-index: 1;
 }
 
-.section_7_word1 p{
+.section7_p1{
     max-width: 18rem;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
-.section_7_word2 p{
+.section7_p2{
     text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_7_image{
@@ -746,6 +750,8 @@ nav{
     margin: 0 auto 5rem 0;
     width: 100%;
     max-width: 31rem;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_10_box img{
@@ -793,6 +799,11 @@ nav{
     margin-bottom: 2rem;
 }
 
+.section_11_title_word{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
 .section_11_title_word p{
     white-space: pre-line;
     font-size: 2rem;
@@ -809,6 +820,8 @@ nav{
     flex-direction: column;
     width: 25%;
     margin: 0 1rem 0 0;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_11_box span, .section_11_box p{

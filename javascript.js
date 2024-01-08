@@ -146,3 +146,59 @@ function section6() {
 
 window.addEventListener('scroll', section6);
 
+//section7 스크롤 액션
+function section7() {
+    let word = document.querySelectorAll('.section_title_word')[4];
+    let word1s = document.querySelectorAll('.section7_p1');
+    let word2 = document.querySelector('.section7_p2');
+
+    let a = document.querySelector('.section_7_image1-3');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(() => {
+            word1s.forEach((word1, index) => {
+                setTimeout(() => {
+                scrollAction(word1)
+            }, index * 500);
+            });
+        }, 500);
+        setTimeout(function(){scrollAction(word2)},1500);
+    }
+}
+
+window.addEventListener('scroll', section7);
+
+//section10 스크롤 액션
+function section10() {
+    let word = document.querySelectorAll('.section_title_word')[6];
+    let contents = document.querySelectorAll('.section_10_box');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(() => {
+            contents.forEach((content) => {
+                scrollAction(content);
+            });
+        }, 500);
+    }
+}
+
+window.addEventListener('scroll', section10); 
+
+//section11 스크롤 액션
+function section11() {
+    let word = document.querySelector('.section_11_title_word');
+    let contents = document.querySelectorAll('.section_11_box');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(() => {
+            contents.forEach((content) => {
+                scrollAction(content);
+            });
+        }, 500);
+    }
+}
+
+window.addEventListener('scroll', section11);
