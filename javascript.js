@@ -45,3 +45,34 @@ function showmenu(event){
 }
 
 menuicon.addEventListener('click' , showmenu);
+
+//스크롤 시 요소 나타내기
+const scrollAction = function (element) {
+    element.classList.add('scroll_action');
+}
+
+//section3 스크롤 액션
+function section3() {
+    let word = document.querySelector('.section_title_word');
+    let img1 = document.querySelector('.section_3_image1');
+    let img2 = document.querySelector('.section_3_image2');
+    let word2 = document.querySelector('.section_3_p');
+    let imgbox = document.querySelector('.section_3_image');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(function(){scrollAction(img1)},600);
+        setTimeout(function(){scrollAction(img2)},1200);
+        setTimeout(function(){scrollAction(word2)},1800);
+    }
+
+    //모바일 스크롤 액션
+    if (window.innerWidth < 640) {
+        const translateY = Math.min(Math.max(word.getBoundingClientRect().top, -58), 68);
+        imgbox.style.transform = `translateX(${translateY}px)`;
+      } else {
+        imgbox.style.transform = 'none';
+      }
+}
+
+window.addEventListener('scroll', section3);

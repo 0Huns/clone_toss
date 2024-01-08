@@ -304,6 +304,8 @@ nav{
 .section_title_word{
     position: relative;
     z-index: 1;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_title_word h1{
@@ -324,6 +326,8 @@ nav{
     height: auto;
     top: 0;
     right: -10%;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_3_image1-1{
@@ -345,6 +349,8 @@ nav{
     height: auto;
     top: 25%;
     left: -10%;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_3_image2-1{
@@ -371,6 +377,11 @@ nav{
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(51, 61, 75);
+}
+
+.section_3_p{
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 /* -----section_4----- */
@@ -912,4 +923,10 @@ nav{
 
 .footer_nav3 li:hover{
     opacity: 1;
+}
+
+.scroll_action{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 1s ease-in, opacity 1s ease-in;
 }

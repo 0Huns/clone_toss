@@ -89,6 +89,7 @@
 .section_3_image{
     position: relative;
     display: flex;
+    transform: translateX(0);
 }
 
 .section_3_image1, .section_3_image2{
