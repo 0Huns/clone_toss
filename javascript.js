@@ -140,8 +140,9 @@ function section6() {
             imgs.forEach((img) => {
                 scrollAction(img);
             });
-        }, 1000);
+        }, 800);
     }
 }
 
 window.addEventListener('scroll', section6);
+
