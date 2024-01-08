@@ -53,7 +53,7 @@ const scrollAction = function (element) {
 
 //section3 스크롤 액션
 function section3() {
-    let word = document.querySelector('.section_title_word');
+    let word = document.querySelectorAll('.section_title_word')[0];
     let img1 = document.querySelector('.section_3_image1');
     let img2 = document.querySelector('.section_3_image2');
     let word2 = document.querySelector('.section_3_p');
