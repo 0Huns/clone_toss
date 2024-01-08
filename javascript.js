@@ -61,12 +61,12 @@ function section3() {
 
     if (window.innerHeight > word.getBoundingClientRect().top) {
         scrollAction(word);
-        setTimeout(function(){scrollAction(img1)},600);
-        setTimeout(function(){scrollAction(img2)},1200);
-        setTimeout(function(){scrollAction(word2)},1800);
+        setTimeout(function(){scrollAction(img1)},500);
+        setTimeout(function(){scrollAction(img2)},1000);
+        setTimeout(function(){scrollAction(word2)},1500);
     }
 
-    //모바일 스크롤 액션
+    //section3 모바일 스크롤 액션
     if (window.innerWidth < 640) {
         const translateY = Math.min(Math.max(word.getBoundingClientRect().top, -58), 68);
         imgbox.style.transform = `translateX(${translateY}px)`;
@@ -89,13 +89,36 @@ function section4() {
             contents.forEach((content) => {
                 scrollAction(content);
             });
-        }, 600);
+        }, 500);
         setTimeout(() => {
             imgs.forEach((img) => {
                 scrollAction(img);
             });
-        }, 1200);
+        }, 1000);
     }
 }
 
 window.addEventListener('scroll', section4);
+
+//section5 스크롤 액션
+function section5() {
+    let word = document.querySelectorAll('.section_title_word')[2];
+    let img = document.querySelector('.section_5_image');
+    let word2 = document.querySelector('.section_5_word2');
+    let word1s = document.querySelectorAll('.section_5_word1-1');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(function(){scrollAction(img)},500);
+        setTimeout(function(){scrollAction(word2)},1000);
+        setTimeout(() => {
+            word1s.forEach((word1, index) => {
+                setTimeout(() => {
+                scrollAction(word1)
+            }, index * 500);
+            });
+        }, 1500);
+    }
+}
+
+window.addEventListener('scroll', section5);

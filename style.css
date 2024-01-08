@@ -446,6 +446,11 @@ nav{
     margin: auto;
 }
 
+.section_5_word1-1{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
 .section_5_word1-1, .section_5_word1-2, .section_5_word1-3{
     position: relative;
     font-size: 3.5rem;
@@ -466,6 +471,8 @@ nav{
 .section_5_word2{
     white-space: pre-line;
     margin-top: 2rem;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_5_word2 p{
@@ -483,6 +490,8 @@ nav{
     height: auto;
     top: 0;
     right: -10%;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_5_image1-1{
@@ -932,5 +941,5 @@ nav{
 .scroll_action{
     transform: translateY(0);
     opacity: 1;
-    transition: transform 1s ease-in, opacity 1s ease-in;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
 }
