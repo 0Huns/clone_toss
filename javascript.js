@@ -189,6 +189,14 @@ function scrollOpacity(elements, values) {
 
 window.addEventListener('scroll', section7);
 
+//section8 width 스크롤 액션
+window.addEventListener('scroll', function() {
+    let titleimg = document.querySelector('.section_8_image');
+    titleimg.style.width = Math.min(
+        Math.max((95 - (titleimg.getBoundingClientRect().top / 70)), 85)
+        ,100) + '%';
+});
+
 //section10 스크롤 액션
 function section10() {
     let word = document.querySelectorAll('.section_title_word')[6];
