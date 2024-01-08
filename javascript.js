@@ -193,7 +193,7 @@ window.addEventListener('scroll', section7);
 window.addEventListener('scroll', function() {
     let titleimg = document.querySelector('.section_8_image');
     titleimg.style.width = Math.min(
-        Math.max((95 - (titleimg.getBoundingClientRect().top / 70)), 85)
+        Math.max((95 - (titleimg.getBoundingClientRect().top / 100)), 90)
         ,100) + '%';
 });
 
