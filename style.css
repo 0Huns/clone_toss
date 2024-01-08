@@ -407,13 +407,17 @@ nav{
     align-items: center;
 }
 
-.section_4_box img, .section_4_box_revers img{
+.section4_img{
     width: 45%;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_4_word{
     white-space: pre-line;
     width: 45%;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .section_4_word-1{

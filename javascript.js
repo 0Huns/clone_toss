@@ -76,3 +76,26 @@ function section3() {
 }
 
 window.addEventListener('scroll', section3);
+
+//section4 스크롤 액션
+function section4() {
+    let word = document.querySelectorAll('.section_title_word')[1];
+    let contents = document.querySelectorAll('.section_4_word');
+    let imgs = document.querySelectorAll('.section4_img');
+
+    if (window.innerHeight > word.getBoundingClientRect().top) {
+        scrollAction(word);
+        setTimeout(() => {
+            contents.forEach((content) => {
+                scrollAction(content);
+            });
+        }, 600);
+        setTimeout(() => {
+            imgs.forEach((img) => {
+                scrollAction(img);
+            });
+        }, 1200);
+    }
+}
+
+window.addEventListener('scroll', section4);
