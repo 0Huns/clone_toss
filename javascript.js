@@ -152,8 +152,8 @@ function section7() {
     let word1s = document.querySelectorAll('.section7_p1');
     let word2 = document.querySelector('.section7_p2');
 
-    let a = document.querySelector('.section_7_image1-3');
-    let b = document.querySelectorAll('.section_7_image1-3 img');
+    let opacity_standard = document.querySelector('.section_7_image1-3').getBoundingClientRect().top;
+    let opacity_img = document.querySelectorAll('.section_7_image1-3 img');
 
     if (window.innerHeight > word.getBoundingClientRect().top) {
         scrollAction(word);
@@ -168,16 +168,16 @@ function section7() {
     }
 
     //section7 img 스크롤애니메이션 opacity
-    if(a.getBoundingClientRect().top <= 610 && a.getBoundingClientRect().top >= 551) {
-        scrollOpacity(b, [0, 0, 0, 1, 0, 0, 0]);
-    }else if(a.getBoundingClientRect().top <= 550 && a.getBoundingClientRect().top >= 451) {
-        scrollOpacity(b, [0, 0, 0.5, 1, 0.5, 0, 0]);
-    } else if (a.getBoundingClientRect().top <= 450 && a.getBoundingClientRect().top >= 301) {
-        scrollOpacity(b, [0, 0.5, 1, 1, 1, 0.5, 0]);
-    } else if (a.getBoundingClientRect().top <= 300 && a.getBoundingClientRect().top >= 151) {
-        scrollOpacity(b, [0.5, 1, 1, 1, 1, 1, 0.5]);
-    } else if (a.getBoundingClientRect().top <= 150 && a.getBoundingClientRect().top >= 0) {
-        scrollOpacity(b, [1, 1, 1, 1, 1, 1, 1]);
+    if(opacity_standard <= 610 && opacity_standard >= 551) {
+        scrollOpacity(opacity_img, [0, 0, 0, 1, 0, 0, 0]);
+    }else if(opacity_standard <= 550 && opacity_standard >= 451) {
+        scrollOpacity(opacity_img, [0, 0, 0.5, 1, 0.5, 0, 0]);
+    } else if (opacity_standard <= 450 && opacity_standard >= 301) {
+        scrollOpacity(opacity_img, [0, 0.5, 1, 1, 1, 0.5, 0]);
+    } else if (opacity_standard <= 300 && opacity_standard >= 151) {
+        scrollOpacity(opacity_img, [0.5, 1, 1, 1, 1, 1, 0.5]);
+    } else if (opacity_standard <= 150 && opacity_standard >= 0) {
+        scrollOpacity(opacity_img, [1, 1, 1, 1, 1, 1, 1]);
     }
 }
 //section7 img 스크롤애니메이션 opacity 함수 정의
