@@ -43,7 +43,6 @@
     left: 0;
     top: 60px;
     display: grid;
-    visibility: hidden;
     transform:translateY(-100%);
     transition: all 0.3s ease;
     width: 100%;
@@ -53,7 +52,6 @@
 
 .display_visible{
     transform:translateY(0);
-    visibility: visible;
 }
 
 .nav_menu_link{
